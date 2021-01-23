@@ -15,7 +15,8 @@ const app = express();
 const connectToDB = new Promise((resolve, reject) => {
   mongoose
     .connect(
-      process.env.MONGODB_URI,
+      "mongodb://localhost:27017",
+      // process.env.MONGODB_URI,
       // "mongodb://amdb:amdb@it2810-59.idi.ntnu.no:27017/amdb_v2?authSource=amdb",
       {
         useNewUrlParser: true,
